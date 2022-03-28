@@ -35,7 +35,7 @@ async function main() {
   console.log("Updated document", updateResult);
 
   filteredDocs = await collection.find({ name: "Harris Sparrow" }).toArray();
-  console.log("Found documents filtered by Harris Sparro", filteredDocs);
+  console.log("Found documents filtered by Harris Sparrow", filteredDocs);
 
   //// Delete
   const deleteResult = await collection.deleteMany({});
